@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Satisfy&display=swap');
+:root{
+    --lightBlue:rgb(173, 216, 230);
+    --mainSpacing:1.2rem;
+    --headColor:black;
+    --textColor:white;
+    --borderColor:orange;
+    --btnColor:black;
+    --orangeShadow:2,3,4,0 rgba(255, 99, 71);
+    --borderRadius:0.6rem;
+    --mainTransition:0.5s;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'popins',sans-serif;
+    /* color: var(--mainColor); */
+    font-size: 1rem;
+   
+}
+/* Header Open */
+.banner{
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+       background:linear-gradient(hsl(160, 75%, 39%),rgba(0,0,0,0.4)) , url(../image/lap.webp) center/cover no-repeat;   
+      /* background:linear-gradient(rgba(43, 167, 43,0.5),rgba(0,0,0,0.4)) ,url("../images/lap.webp") center/cover no-repeat; */
+   
+} 
+.banner-image{
+    text-align: center;
+     width: 70%;    
+}
+.banner-title{
+    text-transform: uppercase;
+    color: var(--headColor);   
+}
+p{
+   color:var(--textColor);
+   font-style: italic; 
+  
+}
+a{
+    text-decoration: none;
+}
+.btn-white{
+    color: var(--btnColor);
+    border: 2px solid var(--borderColor);
+    padding: 0.5rem;
+    display: inline-block;
+    transition: var(--mainTransition);
+    border-radius: var(--borderRadius);
+
+}
+.btn-white:hover ,  nav ul a:hover{
+    background: var(--borderColor);
+    color:var(--textColor);
+}
+/* Header Close */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    background-color: hsl(160, 75%, 39%);
+    position: fixed;
+    height: auto;
+    width: 100%;
+   
+}
+nav ul a{
+   color: var(--headColor);
+   display: inline-block;
+   padding: 0.6rem;
+   transition: var(--mainTransition); 
+   font-size: 1.5rem;
+   border-radius: 10px;
+  
+
+}
+
